@@ -177,3 +177,100 @@ a:focus {
     outline: 2px dashed var(--accent-color);
     outline-offset: 4px;
 }
+
+.main-nav {
+    margin-top: 20px;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.main-nav li {
+    margin: 0;
+}
+
+.main-nav a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: var(--card-bg);
+    border: 1px solid var(--main-color);
+    border-radius: 4px;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.main-nav a:hover {
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;    
+}
+
+.main-nav a:active {
+    transform: translateY(2px);
+}
+
+.main-nav a:focus {
+    outline: 2px dashed var(--accent-color);
+    outline-offset: 2px;
+}
+
+.genres-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.genre-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 180px;
+    max-width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.genre-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(63, 201, 113, 0.2);
+    border-color: var(--accent-color);
+}
+
+.genre-badge {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.genre-badge.rpg { background-color: #7e22ce; }
+.genre-badge.moba { background-color: #3b82f6; }
+.genre-badge.roguelike { background-color: #ef4444; }
+.genre-badge.shooter { background-color: #3fc971; }
+
+.genre-card h3 {
+    color: var(--text-color);
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.genre-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #a0a0a0;
+}

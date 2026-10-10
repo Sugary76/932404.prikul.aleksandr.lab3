@@ -15,13 +15,23 @@
 <header>
     <h1>Прикуль Александр</h1>
     <p>Геймер и разработчик игр</p>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#genres">Жанры</a></li>
+            <li><a href="#stats">Статистика</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
 
     <img src="images/photo.jpg" alt="Фотография Прикуля Александра" width="240" height="320">
     
-    <section>
+    <section id="skills">
         <h2>Навыки</h2>
         <ul>
             <li>Понимание игровых механик и баланса</li>
@@ -33,7 +43,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="projects">
         <h2>Проекты</h2>
 
         <ol>
@@ -46,12 +56,41 @@
         </ol>
     </section>
 
+    <section id="genres">
+        <h2>Любимые жанры игр</h2>
+        <div class="genres-container">
+            <article class="genre-card">
+                <div class="genre-badge rpg">RPG</div>
+                <h3>Ролевые игры</h3>
+                <p>Прокачка персонажей, нелинейный сюжет, исследование мира. Квесты, деревья скиллов</p>
+            </article>
+
+            <article class="genre-card">
+                <div class="genre-badge moba">MOBA</div>
+                <h3>Онлайн-боевые арены</h3>
+                <p>Онлайн сражения 5vs5, контроль карты, выбор героев. Механики линий, разнообразные скиллы героев</p>
+            </article>
+
+            <article class="genre-card">
+                <div class="genre-badge roguelike">Rogue-like</div>
+                <h3>Рогалики</h3>
+                <p>Рандомно сгенерированные уровни, перманентная смерть, билды. Рандомность, синергии предметов, реиграбельность</p>
+            </article>
+
+            <article class="genre-card">
+                <div class="genre-badge shooter">Shooter</div>
+                <h3>Шутеры</h3>
+                <p>Реакция, точность, контроль. Хитбоксы, контроль карты</p>
+            </article>
+        </div>
+    </section>
+
     <aside>
         <h2>Моя любимая игровая платформа</h2>
         <p>ПК</p>
     </aside>
 
-    <section>
+    <section id="contact">
     <h2>Обратная связь</h2>
 
     <form>
