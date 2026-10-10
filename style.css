@@ -44,6 +44,7 @@ main img {
     display: block;
     width: 150px;
     height: 150px;
+    max-width: 100%;
     object-fit: cover;
     border-radius: 8px;
     margin: 0 auto 20px auto;
@@ -259,9 +260,9 @@ a:focus {
 }
 
 .genre-badge.rpg { background-color: #7e22ce; }
-.genre-badge.moba { background-color: #3b82f6; }
-.genre-badge.roguelike { background-color: #ef4444; }
-.genre-badge.shooter { background-color: #3fc971; }
+.genre-badge.moba { background-color: #2e5fc7; }
+.genre-badge.roguelike { background-color: #b82626; }
+.genre-badge.shooter { background-color: #257944; }
 
 .genre-card h3 {
     color: var(--text-color);
@@ -306,4 +307,38 @@ a:focus {
 .stat-label {
     font-size: 1rem;
     color: var(--text-color);
+}
+
+@media (max-width: 1024px) {
+    .genre-card {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .genre-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-nav a {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
 }
